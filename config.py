@@ -59,8 +59,8 @@ BASE_SITE = os.environ.get("BASE_SITE", "dalink.in")
 # For Admin use
 CHANNELS = is_enabled((os.environ.get("CHANNELS", "True")), True)
 CHANNEL_ID = (
-    [int(i.strip()) for i in os.environ.get("CHANNEL_ID").split(" ")]
-    if os.environ.get("CHANNEL_ID")
+    [int(i.strip()) for i in os.environ.get("-1001828551401").split(" ")]
+    if os.environ.get("-1001828551401")
     else []
 )
 
