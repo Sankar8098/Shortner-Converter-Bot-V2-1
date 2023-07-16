@@ -40,7 +40,7 @@ class Database:
             "bot": helpers.temp.BOT_USERNAME,
         }
         newvalues = {
-            "$inc": {"links": links, "mdisk_links": mdisk, "shortener_links": syshort}
+            "$inc": {"links": links, "mdisk_links": mdisk, "shortener_links": dalink}
         }
         return await self.stats.update_one(myquery, newvalues)
 
