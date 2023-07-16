@@ -28,14 +28,14 @@ ADMINS = (
 
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "MdiskConvertor")
 DATABASE_URL = os.environ.get(
-    "DATABASE_URL", None
+    "mongodb+srv://nakflixbot:alpha3720@cluster0.qgybxbu.mongodb.net/?retryWrites=true&w=majority", None
 )  # mongodb uri from https://www.mongodb.com/
 OWNER_ID = int(os.environ.get("5821871362"))  # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
 LOG_CHANNEL = int(
-    os.environ.get("LOG_CHANNEL", "0")
+    os.environ.get("LOG_CHANNEL", "-1001870015374")
 )  # log channel for information about users
 UPDATE_CHANNEL = os.environ.get(
     "UPDATE_CHANNEL", False)  # For Force Subscription
